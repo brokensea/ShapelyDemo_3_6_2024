@@ -23,13 +23,15 @@ a {
 
 /* Background */
 .backgroundFirst-container {
-  height: 100vh;
   background-image: url("../img/background/1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* Set a specific height */
+  min-height: 100vh;
+   /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
-  position: relative; /* 为背景容器设置相对定位 */
-
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; /* set relativ postion */
   display: flex;
 }
 
